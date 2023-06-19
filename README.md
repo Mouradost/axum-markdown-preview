@@ -1,5 +1,7 @@
 # Markdown Preview
 
+![Tests](https://github.com/Mouradost/axum-markdown-preview/actions/workflows/rust.yml/badge.svg)
+
 This is a Markdown previewer build upon [Axum](https://github.com/tokio-rs/axum), [Clap](https://github.com/clap-rs/clap), [Open](https://github.com/Byron/open-rs) and [Markdown-rs](https://github.com/wooorm/markdown-rs)
 
 ## Use
