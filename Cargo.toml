@@ -1,0 +1,32 @@
+[package]
+name = "axum-markdown-preview"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mourad Lablack <mouradost@gmail.com>"]
+description = "Axum markdown preview with folder support"
+homepage = "https://github.com/Mouradost/axum-markdown-preview"
+repository = "https://github.com/Mouradost/axum-markdown-preview" 
+license = "MIT"
+keywords = ["server", "markdown", "preview"]
+categories = ["server", "encoding", "parser-implementations", "parsing", "text-processing"]
+include = ["src/", "license"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.28", features = ["full"] }
+# Server
+axum = { version = "0.6", features = ["headers"] }
+tower-http = { version = "0.4.0", features = ["fs"] }
+# CLI
+# Colors in the terminal
+colored = "2.0"
+# Better arg parser
+clap = {version = "4.3", features = ["derive"]}
+# Markdown paser
+markdown = "1.0.0-alpha.10"
+# Errors
+anyhow = "1.0.71"
+# Open browser
+open = "4"
